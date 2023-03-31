@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C76575129D772C10046FCA2 /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C76575029D772C10046FCA2 /* TempModel.swift */; };
 		2CB7B43D29CE128A005D3270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B43C29CE128A005D3270 /* AppDelegate.swift */; };
 		2CB7B43F29CE128A005D3270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B43E29CE128A005D3270 /* SceneDelegate.swift */; };
 		2CB7B44629CE128B005D3270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB7B44529CE128B005D3270 /* Assets.xcassets */; };
@@ -15,9 +16,11 @@
 		2CB7B45F29CE1AC0005D3270 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B45E29CE1AC0005D3270 /* DayViewController.swift */; };
 		2CB7B46229CE1B2F005D3270 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B46129CE1B2F005D3270 /* WeekViewController.swift */; };
 		2CB7B46529CE1BCB005D3270 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B46429CE1BCB005D3270 /* UIViewController.swift */; };
+		2CB7B46829CE2070005D3270 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7B46729CE2070005D3270 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C76575029D772C10046FCA2 /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
 		2CB7B43929CE128A005D3270 /* Weather-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB7B43C29CE128A005D3270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB7B43E29CE128A005D3270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		2CB7B45E29CE1AC0005D3270 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		2CB7B46129CE1B2F005D3270 /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
 		2CB7B46429CE1BCB005D3270 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		2CB7B46729CE2070005D3270 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				2CB7B45529CE1417005D3270 /* Models */,
 				2CB7B45129CE12D9005D3270 /* ViewControllers */,
+				2CB7B46629CE205D005D3270 /* Managers */,
 				2CB7B46329CE1BB6005D3270 /* Extensions */,
 				2CB7B45029CE129E005D3270 /* Resources */,
 			);
@@ -100,6 +105,7 @@
 		2CB7B45529CE1417005D3270 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C76575029D772C10046FCA2 /* TempModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				2CB7B46429CE1BCB005D3270 /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CB7B46629CE205D005D3270 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2CB7B46729CE2070005D3270 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB7B46229CE1B2F005D3270 /* WeekViewController.swift in Sources */,
+				2C76575129D772C10046FCA2 /* TempModel.swift in Sources */,
 				2CB7B43D29CE128A005D3270 /* AppDelegate.swift in Sources */,
 				2CB7B46529CE1BCB005D3270 /* UIViewController.swift in Sources */,
+				2CB7B46829CE2070005D3270 /* NetworkManager.swift in Sources */,
 				2CB7B45429CE1318005D3270 /* RootViewController.swift in Sources */,
 				2CB7B43F29CE128A005D3270 /* SceneDelegate.swift in Sources */,
 				2CB7B45F29CE1AC0005D3270 /* DayViewController.swift in Sources */,

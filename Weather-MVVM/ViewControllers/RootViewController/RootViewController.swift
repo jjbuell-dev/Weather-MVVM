@@ -11,7 +11,7 @@
 import UIKit
 
 final class RootViewController: UIViewController {
-
+    
     // MARK: - Properties
     
     private let dayViewController: DayViewController = {
@@ -32,9 +32,32 @@ final class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      // Setup Child ViewContollers
+        
+        // Setup Child ViewContollers
         setupChildViewControllers()
+        
+        // Fetch Weather Data
+        fetchWeatherData()
+        
+    }
+    
+    
+    // MARK: - Fetch Weather Data Function
+    
+    private func fetchWeatherData() {
+       
+        guard let baseURL = URL(string: "https://https://weatherapi-com.p.rapidapi.com/current.json?") else { return }
+        let url = baseURL.appendingPathComponent("q=\(84604)")
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Request Did Fail: \(error)")
+                
+            } else if let response = response {
+                print(response)
+            }
+            print(url)
+        }.resume()
     }
     
     // MARK: - Helper Functions
@@ -45,7 +68,7 @@ final class RootViewController: UIViewController {
         
         view.addSubview(dayViewController.view)
         view.addSubview(weekViewController.view)
-
+        
         dayViewController.didMove(toParent: self)
         weekViewController.didMove(toParent: self)
         

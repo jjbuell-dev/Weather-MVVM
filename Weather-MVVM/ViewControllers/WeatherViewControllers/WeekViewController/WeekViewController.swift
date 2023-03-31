@@ -25,6 +25,6 @@ final class WeekViewController: UIViewController {
     
     private func setupView() {
         // Configure View
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemMint
     }
 }

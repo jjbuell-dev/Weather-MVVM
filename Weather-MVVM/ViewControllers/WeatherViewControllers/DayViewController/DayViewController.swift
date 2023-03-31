@@ -25,7 +25,7 @@ final class DayViewController: UIViewController {
     
     private func setupView() {
         // configure view
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = .systemBlue
     }
 
 }
